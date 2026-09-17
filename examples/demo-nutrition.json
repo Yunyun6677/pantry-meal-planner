@@ -1,0 +1,14 @@
+{
+  "servings": 2,
+  "source": "Demonstration values only; replace with an authoritative regional nutrient table.",
+  "ingredients": [
+    {"name": "egg", "grams": 150},
+    {"name": "tomato", "grams": 300},
+    {"name": "cooked_rice", "grams": 250}
+  ],
+  "nutrient_table": {
+    "egg": {"energy_kcal": 143, "protein_g": 12.6, "fat_g": 9.5, "carbohydrate_g": 0.7, "fiber_g": 0, "sodium_mg": 142},
+    "tomato": {"energy_kcal": 18, "protein_g": 0.9, "fat_g": 0.2, "carbohydrate_g": 3.9, "fiber_g": 1.2, "sodium_mg": 5},
+    "cooked_rice": {"energy_kcal": 130, "protein_g": 2.7, "fat_g": 0.3, "carbohydrate_g": 28.2, "fiber_g": 0.4, "sodium_mg": 1}
+  }
+}

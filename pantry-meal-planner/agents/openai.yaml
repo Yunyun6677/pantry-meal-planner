@@ -1,0 +1,6 @@
+interface:
+  display_name: "冰箱私厨"
+  short_description: "根据现有食材、口味与健康约束规划可执行的个性化家常餐"
+  default_prompt: "Use $pantry-meal-planner to recommend meals I can cook from my current pantry without shopping."
+policy:
+  allow_implicit_invocation: true

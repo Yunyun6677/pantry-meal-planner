@@ -1,0 +1,45 @@
+{
+  "mode": "strict_zero_shopping",
+  "profile": {
+    "allergies": ["peanut"],
+    "avoid": [],
+    "clinician_restrictions": [],
+    "goals": ["higher_protein"],
+    "preferred_tags": ["Chinese home cooking"],
+    "equipment": ["stove", "wok"],
+    "time_minutes": 30
+  },
+  "pantry": [
+    {"name": "鸡蛋", "canonical_name": "egg", "quantity": 4, "unit": "count"},
+    {"name": "番茄", "canonical_name": "tomato", "quantity": 400, "unit": "g", "use_by": "2026-09-19"},
+    {"name": "米饭", "canonical_name": "cooked_rice", "quantity": 300, "unit": "g"}
+  ],
+  "recipes": [
+    {
+      "id": "tomato-egg-rice",
+      "title": "番茄鸡蛋盖饭",
+      "required": [
+        {"name": "egg", "quantity": 3, "unit": "count"},
+        {"name": "tomato", "quantity": 300, "unit": "g"},
+        {"name": "cooked_rice", "quantity": 250, "unit": "g"}
+      ],
+      "optional": [],
+      "equipment": ["stove", "wok"],
+      "time_minutes": 20,
+      "tags": ["higher_protein", "Chinese home cooking"],
+      "allergens": ["egg"]
+    },
+    {
+      "id": "peanut-noodles",
+      "title": "花生拌面",
+      "required": [
+        {"name": "noodles", "quantity": 100, "unit": "g"},
+        {"name": "peanut", "quantity": 20, "unit": "g"}
+      ],
+      "equipment": ["stove"],
+      "time_minutes": 15,
+      "tags": [],
+      "allergens": ["peanut"]
+    }
+  ]
+}
