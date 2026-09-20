@@ -2,6 +2,12 @@
 
 ## 直接运行本地 demo
 
+Windows 推荐双击 `start-demo.cmd`：自动后台启动服务、检查就绪并打开浏览器。重复运行会复用已启动的服务。也可运行 `python launch.py`；不打开浏览器用 `python launch.py --no-open`。
+
+这是本机应用，GitHub发布的是代码，不是在线托管的网站。关机/重启后需要再次双击启动；库存不会因此丢失。日志在 `data/server.log`。端口被占用时可用 `python launch.py --port 8766`。没有添加开机自启动或系统服务。
+
+当前没有内置LLM或模型API调用。网页通过关键词和正则解析有限中文指令，再调用固定菜谱筛选、份量/营养计算及SQLite事务；Codex Skill文档不会自动成为网页后台的大模型。
+
 需要 Python 3.10+，无需第三方依赖或 API Key。在项目目录运行：
 
 ```powershell

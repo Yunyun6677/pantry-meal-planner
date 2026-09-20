@@ -16,7 +16,8 @@ def make_server(db_path, port=8765):
             self.end_headers()
             self.wfile.write(raw)
         def do_GET(self):
-            if self.path=='/': self.respond(200,Path(__file__).with_name('index.html').read_bytes(),True)
+            if self.path=='/api/health': self.respond(200,{'app':'pantry-meal-planner','status':'ok','llm':None})
+            elif self.path=='/': self.respond(200,Path(__file__).with_name('index.html').read_bytes(),True)
             elif self.path=='/api/state': self.respond(200,agent.state())
             else: self.respond(404,{'error':'路径不存在'})
         def do_POST(self):
